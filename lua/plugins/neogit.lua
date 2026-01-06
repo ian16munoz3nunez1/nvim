@@ -4,6 +4,9 @@ return {
         "nvim-lua/plenary.nvim",
         "sindrets/diffview.nvim",
         "nvim-telescope/telescope.nvim"
-    }
+    },
+    config = function()
+        vim.keymap.set("n", "<leader>ng", ":Neogit<cr>", {})
+    end
 }
 

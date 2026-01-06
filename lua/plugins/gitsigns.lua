@@ -3,10 +3,10 @@ return {
     event = "BufReadPre",
     config = function()
         vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = "#00FF00", bg = "NONE" }) -- Green for added lines
-        vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#00FFFF", bg = "NONE" }) -- Blue for changed lines
+        vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#FFFF00", bg = "NONE" }) -- Yellow for changed lines
         require("gitsigns").setup({
             current_line_blame = true,
-            blame_format = '<author> • <date> • <summary>',
+            -- blame_format = '<author> • <date> • <summary>',
             signs = {
                 add          = { text = '┃' },
                 change       = { text = '┃' },
