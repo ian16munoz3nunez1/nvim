@@ -9,7 +9,7 @@ return {
         "mason-org/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"lua_ls", "clangd", "gopls", "jdtls", "pylsp", "solargraph"}
+                ensure_installed = {"lua_ls", "arduino_language_server", "clangd", "gopls", "jdtls", "pylsp", "solargraph"}
             })
         end
     },
@@ -49,8 +49,8 @@ return {
             vim.lsp.enable("pylsp")
 
             vim.lsp.config["solargraph"] = {
-                cmd = { "solargraph" },
-                filetypes = { "rb" }
+                cmd = { "solargraph", "stdio" },
+                filetypes = { "ruby" }
             }
             vim.lsp.enable("solargraph")
 
