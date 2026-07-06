@@ -24,7 +24,7 @@ return {
 
             vim.lsp.config["arduino_language_server"] = {
                 cmd = { "arduino_language_server" },
-                filetypes = { "ino" }
+                filetypes = { "arduino" }
             }
             vim.lsp.enable("arduino_language_server")
 
