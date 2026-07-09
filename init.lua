@@ -73,6 +73,7 @@ vim.keymap.set("n", "<leader>javac", ":horizontal terminal javac % && java %:t:r
 vim.keymap.set("n", "<leader>py", ":horizontal terminal python3 %<cr>", {desc = "Run Python file"})
 vim.keymap.set("n", "<leader>rb", ":horizontal terminal ruby %<cr>", {desc = "Run Ruby file"})
 vim.keymap.set("n", "<leader>sh", ":horizontal terminal bash %<cr>", {desc = "Run bash file"})
+vim.keymap.set("n", "<leader>ps", ":horizontal terminal pwsh %<cr>", {desc = "Run pwsh file"})
 vim.keymap.set("n", "<leader>pdf", ":!pdflatex % && open main.pdf<cr>", {desc = "Build a pdf from LaTex"})
 vim.keymap.set("n", "<leader>unov", ":!arduino --board arduino:avr:uno --verify % -v<cr>", {desc = "Verify arduino sketches"})
 vim.keymap.set("n", "<leader>unow", ":!arduino --board arduino:avr:uno --port /dev/ttyACM0 --upload % -v<cr>", {desc = "Upload arduino sketches"})

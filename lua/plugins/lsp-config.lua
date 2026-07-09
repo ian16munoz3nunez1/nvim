@@ -9,7 +9,7 @@ return {
         "mason-org/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"lua_ls", "arduino_language_server", "clangd", "gopls", "jdtls", "pylsp", "solargraph"}
+                ensure_installed = {"lua_ls", "arduino_language_server", "bashls", "clangd", "gopls", "jdtls", "powershell_es", "pylsp", "solargraph"}
             })
         end
     },
