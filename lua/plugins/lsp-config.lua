@@ -7,6 +7,7 @@ return {
     },
     {
         "mason-org/mason-lspconfig.nvim",
+        enabled = false,
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {"lua_ls", "arduino_language_server", "bashls", "clangd", "gopls", "jdtls", "powershell_es", "pylsp", "solargraph"}
@@ -15,6 +16,7 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
+        enabled = false,
         config = function()
             vim.lsp.config["lua_ls"] = {
                 cmd = { "lua-language-server" },
