@@ -20,7 +20,9 @@ return {
                 "ruby",
                 "html",
                 "css",
-                "javascript"
+                "javascript",
+                "markdown",
+                "markdown_inline"
             },
 
             sync_install = false,
