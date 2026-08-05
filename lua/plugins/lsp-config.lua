@@ -10,7 +10,7 @@ return {
         enabled = false,
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = {"lua_ls", "arduino_language_server", "bashls", "clangd", "gopls", "jdtls", "powershell_es", "pylsp", "solargraph"}
+                ensure_installed = {"lua_ls", "arduino_language_server", "bashls", "bibtex", "clangd", "gopls", "jdtls", "powershell_es", "pylsp", "solargraph"}
             })
         end
     },

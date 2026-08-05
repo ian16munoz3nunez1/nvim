@@ -10,6 +10,7 @@ return {
                 "vim", "vimdoc",
                 "query",
                 "bash",
+                "bibtex",
                 "c",
                 "python",
                 "java",
