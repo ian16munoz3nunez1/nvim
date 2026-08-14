@@ -82,31 +82,39 @@ return {
             vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {})
 
             vim.keymap.set('n', ']e', function()
-                vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
+                -- vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.ERROR, count = 1, float = true })
             end, { desc = 'Go to next error' })
             vim.keymap.set('n', '[e', function()
-                vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR })
+                -- vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.ERROR, count = -1, float = true })
             end, { desc = 'Go to previous error' })
 
             vim.keymap.set('n', ']w', function()
-                vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.WARN })
+                -- vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.WARN }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.WARN, count = 1, float = true })
             end, { desc = 'Go to next warning' })
             vim.keymap.set('n', '[w', function()
-                vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.WARN })
+                -- vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.WARN }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.WARN, count = -1, float = true })
             end, { desc = 'Go to previous warning' })
 
             vim.keymap.set('n', ']i', function()
-                vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.INFO })
+                -- vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.INFO }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.INFO, count = 1, float = true })
             end, { desc = 'Go to next info' })
             vim.keymap.set('n', '[i', function()
-                vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.INFO })
+                -- vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.INFO }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.INFO, count = -1, float = true })
             end, { desc = 'Go to previous info' })
 
             vim.keymap.set('n', ']h', function()
-                vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.HINT })
+                -- vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.HINT }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.HINT, count = 1, float = true })
             end, { desc = 'Go to next hint' })
             vim.keymap.set('n', '[h', function()
-                vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.HINT })
+                -- vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.HINT }) -- deprecated since 0.13 version
+                vim.diagnostic.jump({ severity = vim.diagnostic.severity.HINT, count = -1, float = true })
             end, { desc = 'Go to previous hint' })
         end
     }
