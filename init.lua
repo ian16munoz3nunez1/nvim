@@ -89,3 +89,4 @@ vim.keymap.set("n", "<leader>build", ":horizontal terminal ./.build<cr>", {desc 
 vim.keymap.set("n", "<leader>clean", ":horizontal terminal ./.clean<cr>", {desc = "Run a personalized file"})
 vim.keymap.set("n", "<leader>t", ":set list<cr>", {desc = "Show characters in editor"})
 vim.keymap.set("n", "<leader>tt", ":set nolist<cr>", {desc = "Hide characters in editor"})
+vim.keymap.set("n", "<leader>aic", "<cmd>CodeCompanionChat<cr>", {desc = "Chat cloud"})
