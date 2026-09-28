@@ -30,6 +30,8 @@ return {
             }
             vim.lsp.enable("arduino_language_server")
 
+            vim.lsp.enable("bashls")
+
             vim.lsp.config["clangd"] = {
                 cmd = { "clangd" },
                 filetypes = { "c", "cpp", "h" }
@@ -47,6 +49,8 @@ return {
                 filetypes = { "java" }
             }
             vim.lsp.enable("jdtls")
+
+            vim.lsp.enable("powershell_es")
 
             vim.lsp.enable("pylsp")
 
