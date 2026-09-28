@@ -14,7 +14,7 @@ return {
                     formatted_name = "Ollama",
                     schema = {
                         model = {
-                            default = "qwen2.5-coder",
+                            default = "gemma4:31b-cloud",
                         }
                     }
                 })
@@ -25,6 +25,10 @@ return {
         strategies = {
             chat = {
                 adapter = "ollama",
+                roles = {
+                    llm = "🤖 CodeCompanion",
+                    user = "👨‍💻 me"
+                }
             },
             inline = {
                 adapter = "ollama",
